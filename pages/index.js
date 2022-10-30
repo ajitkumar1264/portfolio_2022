@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import About from '../components/About'
 import Contact from '../components/Contact'
-import Main from '../components/Main'
+import Main1 from '../components/Main1'
 import Navbar from '../components/Navbar'
 import Project from '../components/Project'
 import Property from './Property'
@@ -22,7 +22,7 @@ export default function Home() {
       </Head>
       <div>      
       <Navbar/>
-      <Main/>
+      <Main1/>
       <About/>
       <Skills/>
       <Project/>

@@ -17,7 +17,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { BsBack, BsMailbox, BsPersonLinesFill } from "react-icons/bs";
 
-function Main() {
+function Main1() {
   const [bubble, setbubble] = useState(true);
 
   const bubbleshow = () => {
@@ -158,4 +158,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Main1;

@@ -73,7 +73,7 @@ useEffect(() => {
         <div className={nav ? " md:hidden fixed top-0 left-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 easein duration-500":"fixed top-0 left-[-100%] p-10 ease-in duration-500"}>
           <div>
             <div className="flex w-full items-center justify-between">
-              <Image src="/vercel.svg" height={50} width={125} />
+              <Image src="/vercel.svg" alt="ajitkemad" height={50} width={125} />
               <div onClick={handlenav} className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer   ">
                 <AiOutlineClose />
               </div>
