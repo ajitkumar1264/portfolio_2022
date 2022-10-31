@@ -11,7 +11,6 @@ import {
   Rotate,
 } from "react-awesome-reveal";
 import { motion } from "framer-motion";
-
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";

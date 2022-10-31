@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from "react";
 import Image from "next/image";
 import Link from "next/link";
-import * as Scroll from 'react-scroll';
+
 import { AiOutlineClose, AiOutlineMenu,AiOutlineMail } from "react-icons/ai";
 import { FaLinkedin,FaGithub } from "react-icons/fa";
 import { BsPersonLinesFill } from "react-icons/bs";
@@ -65,7 +65,7 @@ useEffect(() => {
             </Link>
           </ul>
           <div onClick={handlenav} className="md:hidden">
-            <AiOutlineMenu size={25} />
+            <AiOutlineMenu/>
           </div>
         </div>
       </div>
