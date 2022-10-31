@@ -130,7 +130,7 @@ function Main1() {
             className="rounded-full shadow-lg bg-red-500 opacity-70 shadow-gray-400 md:p-10 p-5 cursor-pointer hover:scale-110 ease-in duration-500  "
           ></div>
         </div>
-        <div className="absolute  md:left-[35%] top-[22%] md:top-[25%] left-[25%]  ">
+        <div className="absolute  md:left-[35%] top-[22%] md:top-[25%] left-[22%]  ">
           <motion.div
             className=" rounded-xl shadow-lg  opacity-70 shadow-gray-400 p-28   md:p-24 cursor-pointer    "
             animate={{
