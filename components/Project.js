@@ -36,7 +36,7 @@ setfrontendproject(false);
           <div>
           <JackInTheBox delay={400}>
             <h2 className="py-4 px-5 md:px-0 md:mt-5 mt-0 md:mb-10 mb-5">
-              What I've Built
+              What Ive Built
             </h2>
             </JackInTheBox>
           </div>

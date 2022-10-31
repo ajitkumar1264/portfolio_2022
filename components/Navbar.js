@@ -33,7 +33,7 @@ useEffect(() => {
 
   return (
     <div className={shadow ? "fixed w-full h-20 shadow-xl z-[100]  backdrop-blur-[80vh]  ":"fixed w-full h-20 z-[100]   "}>
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+      <div className="flex justify-between items-center w-auto h-full px-2 2xl:px-16">
         <Image src="/vercel.svg" width={125} height={50} alt="logo" />
 
         <div>
@@ -80,7 +80,7 @@ useEffect(() => {
             </div>
             <div className="border-b border-[#5651e5] my-4">
               <p className=" font-bold w-[85%] md:w-[90%] py-4">
-                Let's build something legendary together{" "}
+                Lets build something legendary together{" "}
               </p>
             </div>
           </div>
@@ -107,7 +107,7 @@ useEffect(() => {
 
             <div className="pt-10    ">
               <p className="uppercase tracking-wider text-[#5651e5]">
-                Let's connect{" "}
+                Lets connect{" "}
               </p>
               <JackInTheBox>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%] ">

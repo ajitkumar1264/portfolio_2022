@@ -28,7 +28,7 @@ function Main1() {
       <div className=" relative max-w-[1240px] w-full h-full mx-auto p-2 px-4 flex justify-center items-center ">
         <div>
           <p className="uppercase text-sm tracking-wider text-gray-600">
-            Let's build something new with ar zone
+            Lets build something new with ar zone
           </p>
           <Slide delay={400} direction="up">
             <h1 className="py-4 text-gray-700">
