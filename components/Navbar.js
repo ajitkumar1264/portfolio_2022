@@ -36,7 +36,7 @@ useEffect(() => {
       <div className="flex justify-between items-center w-auto h-full px-2 2xl:px-16">
         <Image src="/vercel.svg" width={125} height={50} alt="logo" />
 
-        <>
+        <div>
           <ul className="hidden md:flex ">
             <a href="/">
               <li className="ml-10 text-small uppercase hover:border-b">
@@ -67,7 +67,7 @@ useEffect(() => {
           <div onClick={handlenav} className="md:hidden mr-5 rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer">
             <AiOutlineMenu/>
           </div>
-        </>
+        </div>
       </div>
 
       <div className={ nav ? "md:hidden fixed bg-black/70 top-0 left-0 h-screen w-full":""}>
@@ -88,29 +88,29 @@ useEffect(() => {
           <div className="py-4 flex flex-col">
           <Slide direction="right">
               <ul className="uppercase ">
-              <a href="/" className="" onClick={()=>setnav(!nav)}>
+              <Link href="/" className="" onClick={()=>setnav(!nav)}>
               <div>
                 <li className="py-4 text-sm">Home</li>
                 </div>
-              </a>
-              <a href="#about" onClick={()=>setnav(!nav)}>
+              </Link>
+              <Link href="#about" onClick={()=>setnav(!nav)}>
               <div>
                 <li className="py-4 text-sm">About</li>
                 </div>
-              </a>
-              <a href="#project" onClick={()=>setnav(!nav)}>
+              </Link>
+              <Link href="#project" onClick={()=>setnav(!nav)}>
               <div>
                 <li className="py-4 text-sm">Projects</li>
                 </div>
-              </a>
-              <a href="#skills" onClick={()=>setnav(!nav)}>
+              </Link>
+              <Link href="#skills" onClick={()=>setnav(!nav)}>
               <div>
                 <li className="py-4 text-sm">Skills</li>
                 </div>
-              </a>
-              <a href="#contact" onClick={()=>setnav(!nav)}>
+              </Link>
+              <Link href="#contact" onClick={()=>setnav(!nav)}>
                 <li className="py-4 text-sm">Contact us</li>
-              </a>
+              </Link>
             </ul>
             </Slide>
 
