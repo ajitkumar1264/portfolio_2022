@@ -32,9 +32,9 @@ function About() {
           <p className="py-2 text-gray-600 underline cursor-pointer mt-5 md:px-0 px-5">
          
           <button className="px-4 py-2 "> 
-         <Bounce delay={700}>
+         
                    <Link href="/">Checkout some of my projects</Link>
-                   </Bounce>
+                
 
          
           </button>

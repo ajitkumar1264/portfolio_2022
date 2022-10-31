@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useState,useEffect} from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Projectitem from "./Projectitem";
@@ -12,6 +12,14 @@ function Project() {
 
 const [frontendproject, setfrontendproject] = useState(true)
 const [backendproject, setbackendproject] = useState(false)
+
+
+useEffect(() => {
+ 
+frontendprojectshow();
+
+}, [])
+
 
 const frontendprojectshow=()=>{
 
@@ -34,7 +42,7 @@ setfrontendproject(false);
         </p>
         <div className="items-center justify-between">
           <div>
-          <JackInTheBox delay={400}>
+          <JackInTheBox>
             <h2 className="py-4 px-5 md:px-0 md:mt-5 mt-0 md:mb-10 mb-5">
               What Ive Built
             </h2>
@@ -59,7 +67,7 @@ setfrontendproject(false);
 
        {frontendproject &&
       ( <div className="grid md:grid-cols-2 gap-8 p-5 md:p-0">
-      <Zoom>
+      <Zoom >
         <Projectitem
         title="Property Finder"
         propertyImg={para}

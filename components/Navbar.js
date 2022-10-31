@@ -64,11 +64,12 @@ useEffect(() => {
               </li>
             </Link>
           </ul>
-          <div onClick={handlenav} className="md:hidden">
+          <div onClick={handlenav} className="md:hidden mr-5 rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer">
             <AiOutlineMenu/>
           </div>
         </div>
       </div>
+
       <div className={ nav ? "md:hidden fixed bg-black/70 top-0 left-0 h-screen w-full":""}>
         <div className={nav ? " md:hidden fixed top-0 left-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 easein duration-500":"fixed top-0 left-[-100%] p-10 ease-in duration-500"}>
           <div>
@@ -88,16 +89,24 @@ useEffect(() => {
           <Slide direction="right">
               <ul className="uppercase ">
               <Link href="/" className="" onClick={()=>setnav(!nav)}>
+              <div>
                 <li className="py-4 text-sm">Home</li>
+                </div>
               </Link>
               <Link href="#about" onClick={()=>setnav(!nav)}>
+              <div>
                 <li className="py-4 text-sm">About</li>
+                </div>
               </Link>
               <Link href="#project" onClick={()=>setnav(!nav)}>
+              <div>
                 <li className="py-4 text-sm">Projects</li>
+                </div>
               </Link>
               <Link href="#skills" onClick={()=>setnav(!nav)}>
+              <div>
                 <li className="py-4 text-sm">Skills</li>
+                </div>
               </Link>
               <Link href="#contact" onClick={()=>setnav(!nav)}>
                 <li className="py-4 text-sm">Contact us</li>
@@ -128,6 +137,7 @@ useEffect(() => {
             </div>
           </div>
         </div>
+        
       </div>
     </div>
   );

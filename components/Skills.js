@@ -1,11 +1,17 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Image from "next/image";
-import {Zoom,Roll, JackInTheBox} from "react-awesome-reveal"
+import {Zoom, JackInTheBox} from "react-awesome-reveal"
 
 function Skills() {
   const [frontend, setfrontend] = useState(true);
   const [backend, setbackend] = useState(false);
   const [others, setothers] = useState(false);
+  useEffect(() => {
+   
+    frontendshow();
+
+  }, [])
+  
 
   const frontendshow = () => {
     setfrontend(true);
@@ -63,7 +69,7 @@ function Skills() {
           <div>
             <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-8 p-5 md:p-0">
 
-<Roll >
+<Zoom>
               <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
                 <div className="grid grid-cols-2 justify-center items-center ">
                   <div className="m-auto ">
@@ -79,9 +85,9 @@ function Skills() {
                   </div>
                 </div>
               </div>
-              </Roll>
+              </Zoom>
 
-              <Roll >
+              <Zoom >
               <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
                 <div className="grid grid-cols-2 justify-center items-center">
                   <div className="m-auto">
@@ -97,9 +103,9 @@ function Skills() {
                   </div>
                 </div>
               </div>
-              </Roll>
+              </Zoom>
 
-              <Roll >
+              <Zoom >
               <div className="p-6  hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
                 <div className="grid grid-cols-2 justify-center items-center">
                   <div className="m-auto">
@@ -115,8 +121,8 @@ function Skills() {
                   </div>
                 </div>
               </div>
-              </Roll>
-<Roll >
+              </Zoom>
+<Zoom >
               <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
                 <div className="grid grid-cols-2 justify-center items-center">
                   <div className="m-auto">
@@ -132,7 +138,7 @@ function Skills() {
                   </div>
                 </div>
               </div>
-              </Roll>
+              </Zoom>
             </div>
           </div>
         )}
@@ -143,7 +149,7 @@ function Skills() {
         <div>
        
           <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-8 p-5 md:p-0">
-          <Roll >
+          <Zoom >
             <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
               <div className="grid grid-cols-2 justify-center items-center">
                 <div className="m-auto">
@@ -159,9 +165,9 @@ function Skills() {
                 </div>
               </div>
             </div>
-        </Roll>
+        </Zoom>
 
-        <Roll >
+        <Zoom >
             <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
               <div className="grid grid-cols-2 justify-center items-center">
                 <div className="m-auto">
@@ -178,7 +184,7 @@ function Skills() {
               </div>
               
             </div>
-            </Roll>
+            </Zoom>
           </div>
           </div>
           )}
@@ -190,7 +196,7 @@ function Skills() {
          
           <div>
             <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-8 p-5 md:p-0">
-            <Roll >
+            <Zoom >
               <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
                 <div className="grid grid-cols-2 justify-center items-center">
                   <div className="m-auto">
@@ -206,9 +212,9 @@ function Skills() {
                   </div>
                 </div>
               </div>
-              </Roll>
+              </Zoom>
 
-              <Roll >
+              <Zoom >
               <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
                 <div className="grid grid-cols-2 justify-center items-center">
                   <div className="m-auto">
@@ -224,9 +230,9 @@ function Skills() {
                   </div>
                 </div>
               </div>
-              </Roll>
+              </Zoom>
 
-              <Roll >
+              <Zoom >
               <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
                 <div className="grid grid-cols-2 justify-center items-center">
                   <div className="m-auto">
@@ -242,7 +248,7 @@ function Skills() {
                   </div>
                 </div>
               </div>
-              </Roll>
+              </Zoom>
             </div>
           </div>
           )}
