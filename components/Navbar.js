@@ -38,31 +38,31 @@ useEffect(() => {
 
         <div>
           <ul className="hidden md:flex ">
-            <a href="/">
+            <Link href="/">
               <li className="ml-10 text-small uppercase hover:border-b">
                 Home
               </li>
-            </a>
-            <a href="/#about" >
+            </Link>
+            <Link href="/#about" >
               <li className="ml-10 text-small uppercase hover:border-b">
                 About
               </li>
-            </a>
-            <a href="/#contact">
+            </Link>
+            <Link href="/#contact">
               <li className="ml-10 text-small uppercase hover:border-b">
                 Contact
               </li>
-            </a>
-            <a href="/#skills">
+            </Link>
+            <Link href="/#skills">
               <li className="ml-10 text-small uppercase hover:border-b">
                 skills
               </li>
-            </a>
-            <a href="/#project">
+            </Link>
+            <Link href="/#project">
               <li className="ml-10 text-small uppercase hover:border-b">
                 project
               </li>
-            </a>
+            </Link>
           </ul>
           <div onClick={handlenav} className="md:hidden mr-5 rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer">
             <AiOutlineMenu/>
