@@ -83,13 +83,18 @@ function Main1() {
           </div>
         </div>
 
-       
+       <div className={
+        bubble?
+        " hidden absolute box bg-red-400 left-[10%] top-[35%] box w-24 h-24"
+        :"  absolute box bg-red-400 left-[10%] top-[35%] box w-24 h-24"
+       }>
+       </div>
 
         <div
           className={
             bubble
               ? "  hidden  absolute top-[5%] right-40"
-              : "absolute top-[20%]  left-[2%]"
+              : "absolute  top-[20%]  left-[2%]"
           }
         >
           <div className="  rounded-full shadow-lg bg-pink-400  opacity-70 shadow-gray-400 md:p-20 p-5 cursor-pointer hover:scale-110 ease-in duration-500  "></div>
@@ -130,7 +135,7 @@ function Main1() {
             className="rounded-full shadow-lg bg-red-500 opacity-70 shadow-gray-400 md:p-10 p-5 cursor-pointer hover:scale-110 ease-in duration-500  "
           ></div>
         </div>
-        <div className="absolute  md:left-[35%] top-[22%] md:top-[25%] left-[22%]  ">
+        <div className="absolute  md:left-[35%] top-[22%] md:top-[25%] left-[20%]  ">
           <motion.div
             className=" rounded-xl shadow-lg  opacity-70 shadow-gray-400 p-28   md:p-24 cursor-pointer    "
             animate={{

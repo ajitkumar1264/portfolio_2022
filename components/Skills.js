@@ -74,7 +74,7 @@ function Skills() {
                 <div className="grid grid-cols-2 justify-center items-center ">
                   <div className="m-auto ">
                     <Image
-                      src="/ajit.jpeg"
+                      src="/html.png"
                       alt="vaghela"
                       width={64}
                       height={64}
@@ -92,7 +92,7 @@ function Skills() {
                 <div className="grid grid-cols-2 justify-center items-center">
                   <div className="m-auto">
                     <Image
-                      src="/ajit.jpeg"
+                      src="/css.png"
                       alt="vaghela"
                       width={64}
                       height={64}
@@ -110,7 +110,7 @@ function Skills() {
                 <div className="grid grid-cols-2 justify-center items-center">
                   <div className="m-auto">
                     <Image
-                      src="/ajit.jpeg"
+                      src="/react.png"
                       alt="vaghela"
                       width={64}
                       height={64}
@@ -122,19 +122,53 @@ function Skills() {
                 </div>
               </div>
               </Zoom>
-<Zoom >
-              <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <Zoom >
+              <div className="p-6  hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
                 <div className="grid grid-cols-2 justify-center items-center">
                   <div className="m-auto">
                     <Image
-                      src="/ajit.jpeg"
+                      src="/next.png"
                       alt="vaghela"
                       width={64}
                       height={64}
                     />
                   </div>
                   <div className="flex flex-col items-center justify-center">
-                    <h3>Firebase</h3>
+                    <h3>Next js</h3>
+                  </div>
+                </div>
+              </div>
+              </Zoom>
+              <Zoom >
+              <div className="p-6  hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+                <div className="grid grid-cols-2 justify-center items-center">
+                  <div className="m-auto">
+                    <Image
+                      src="/redux.png"
+                      alt="vaghela"
+                      width={64}
+                      height={64}
+                    />
+                  </div>
+                  <div className="flex flex-col items-center justify-center">
+                    <h3>Redux</h3>
+                  </div>
+                </div>
+              </div>
+              </Zoom>
+<Zoom >
+              <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+                <div className="grid grid-cols-2 justify-center items-center">
+                  <div className="m-auto">
+                    <Image
+                      src="/js.png"
+                      alt="vaghela"
+                      width={64}
+                      height={64}
+                    />
+                  </div>
+                  <div className="flex flex-col items-center justify-center">
+                    <h3>Java Script</h3>
                   </div>
                 </div>
               </div>
@@ -154,7 +188,58 @@ function Skills() {
               <div className="grid grid-cols-2 justify-center items-center">
                 <div className="m-auto">
                   <Image
-                    src="/ajit.jpeg"
+                    src="/node.png"
+                    alt="vaghela"
+                    width={64}
+                    height={64}
+                  />
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                  <h3>Node js</h3>
+                </div>
+              </div>
+            </div>
+        </Zoom>
+          <Zoom >
+            <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="grid grid-cols-2 justify-center items-center">
+                <div className="m-auto">
+                  <Image
+                    src="/firebase.png"
+                    alt="vaghela"
+                    width={64}
+                    height={64}
+                  />
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                  <h3>Firebase</h3>
+                </div>
+              </div>
+            </div>
+        </Zoom>
+          <Zoom >
+            <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="grid grid-cols-2 justify-center items-center">
+                <div className="m-auto">
+                  <Image
+                    src="/express.png"
+                    alt="vaghela"
+                    width={64}
+                    height={64}
+                  />
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                  <h3>Express Js</h3>
+                </div>
+              </div>
+            </div>
+        </Zoom>
+          <Zoom >
+            <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="grid grid-cols-2 justify-center items-center">
+                <div className="m-auto">
+                  <Image
+                    src="/supabase.png"
                     alt="vaghela"
                     width={64}
                     height={64}
@@ -172,14 +257,14 @@ function Skills() {
               <div className="grid grid-cols-2 justify-center items-center">
                 <div className="m-auto">
                   <Image
-                    src="/ajit.jpeg"
+                    src="/mongo.png"
                     alt="vaghela"
                     width={64}
                     height={64}
                   />
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <h3>Node Js</h3>
+                  <h3>Mongo DB</h3>
                 </div>
               </div>
               
@@ -201,14 +286,70 @@ function Skills() {
                 <div className="grid grid-cols-2 justify-center items-center">
                   <div className="m-auto">
                     <Image
-                      src="/ajit.jpeg"
+                      src="/figma.png"
                       alt="vaghela"
                       width={64}
                       height={64}
                     />
                   </div>
                   <div className="flex flex-col items-center justify-center">
-                    <h3>HTML</h3>
+                    <h3>Figma</h3>
+                  </div>
+                </div>
+              </div>
+              </Zoom>
+            <Zoom >
+              <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+                <div className="grid grid-cols-2 justify-center items-center">
+                  <div className="m-auto">
+                    <Image
+                      src="/python.png"
+                      alt="vaghela"
+                      width={64}
+                      height={64}
+                    />
+                  </div>
+                  <div className="flex flex-col items-center justify-center">
+                    <h3>Python</h3>
+                  </div>
+                </div>
+              </div>
+              </Zoom>
+
+
+              <Zoom >
+              <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+                <div className="grid grid-cols-2 justify-center items-center">
+                  <div className="m-auto">
+                    <Image
+                      src="/cpp.png"
+                      alt="vaghela"
+                      width={64}
+                      height={64}
+                    />
+                  </div>
+                  <div className="flex flex-col items-center justify-center">
+                    <h3>cpp</h3>
+                  </div>
+                </div>
+              </div>
+              </Zoom>
+
+
+
+              <Zoom >
+              <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+                <div className="grid grid-cols-2 justify-center items-center">
+                  <div className="m-auto">
+                    <Image
+                      src="/Flutter.png"
+                      alt="vaghela"
+                      width={64}
+                      height={64}
+                    />
+                  </div>
+                  <div className="flex flex-col items-center justify-center">
+                    <h3>Flutter</h3>
                   </div>
                 </div>
               </div>
@@ -219,32 +360,14 @@ function Skills() {
                 <div className="grid grid-cols-2 justify-center items-center">
                   <div className="m-auto">
                     <Image
-                      src="/ajit.jpeg"
+                      src="/git.png"
                       alt="vaghela"
                       width={64}
                       height={64}
                     />
                   </div>
                   <div className="flex flex-col items-center justify-center">
-                    <h3>Supabase</h3>
-                  </div>
-                </div>
-              </div>
-              </Zoom>
-
-              <Zoom >
-              <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-                <div className="grid grid-cols-2 justify-center items-center">
-                  <div className="m-auto">
-                    <Image
-                      src="/ajit.jpeg"
-                      alt="vaghela"
-                      width={64}
-                      height={64}
-                    />
-                  </div>
-                  <div className="flex flex-col items-center justify-center">
-                    <h3>Node Js</h3>
+                    <h3>Git</h3>
                   </div>
                 </div>
               </div>
