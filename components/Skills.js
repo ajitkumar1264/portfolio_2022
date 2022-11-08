@@ -1,11 +1,14 @@
-import React, { useState,useEffect } from "react";
+import React, { useState,useEffect, useContext } from "react";
 import Image from "next/image";
 import {Zoom, JackInTheBox} from "react-awesome-reveal"
+import annex from "./Context"
 
 function Skills() {
   const [frontend, setfrontend] = useState(true);
   const [backend, setbackend] = useState(false);
   const [others, setothers] = useState(false);
+  const ajx=useContext(annex)
+
   useEffect(() => {
    
     frontendshow();
@@ -46,19 +49,19 @@ function Skills() {
           <div className="flex gap-2 justify-between md:px-0 px-5 ">
             <button 
               onClick={() => frontendshow()}
-              className=" cursor-pointer text-xm py-2 px-2 hover:border-b-2 border-black"
+              className={ajx.darkmode ? " cursor-pointer text-xm py-2 px-2 hover:border-b-2 border-black shadow-none text-black":"cursor-pointer text-xm py-2 px-2 hover:border-b-2 border-black"}
             >
               frontend
             </button>
             <button
               onClick={() => backendshow()}
-              className="  cursor-pointer text-xm py-2 px-2 hover:border-b-2 border-black"
+              className={ajx.darkmode ? " cursor-pointer text-xm py-2 px-2 hover:border-b-2 border-black shadow-none text-black":"cursor-pointer text-xm py-2 px-2 hover:border-b-2 border-black"}
             >
               backend
             </button>
             <button
               onClick={() => othersshow()}
-              className=" cursor-pointer text-xm py-2 px-1 hover:border-b-2 border-black"
+              className={ajx.darkmode ? " cursor-pointer text-xm py-2 px-2 hover:border-b-2 border-black shadow-none text-black":"cursor-pointer text-xm py-2 px-2 hover:border-b-2 border-black"}
             >
               others
             </button>
@@ -70,7 +73,7 @@ function Skills() {
             <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-8 p-5 md:p-0">
 
 <Zoom>
-              <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className={ajx.darkmode ? "p-6 hover:bg-amber-400 shadow-amber-400 hover:text-black  shadow-sm rounded-xl hover:scale-105 ease-in duration-300" :"p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300"}>
                 <div className="grid grid-cols-2 justify-center items-center ">
                   <div className="m-auto ">
                     <Image
@@ -88,7 +91,7 @@ function Skills() {
               </Zoom>
 
               <Zoom >
-              <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className={ajx.darkmode ? "p-6 hover:bg-amber-400 shadow-amber-400 hover:text-black  shadow-sm rounded-xl hover:scale-105 ease-in duration-300" :"p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300"}>
                 <div className="grid grid-cols-2 justify-center items-center">
                   <div className="m-auto">
                     <Image
@@ -106,7 +109,7 @@ function Skills() {
               </Zoom>
 
               <Zoom >
-              <div className="p-6  hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className={ajx.darkmode ? "p-6 hover:bg-amber-400 shadow-amber-400 hover:text-black  shadow-sm rounded-xl hover:scale-105 ease-in duration-300" :"p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300"}>
                 <div className="grid grid-cols-2 justify-center items-center">
                   <div className="m-auto">
                     <Image
@@ -123,7 +126,7 @@ function Skills() {
               </div>
               </Zoom>
               <Zoom >
-              <div className="p-6  hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className={ajx.darkmode ? "p-6 hover:bg-amber-400 shadow-amber-400 hover:text-black  shadow-sm rounded-xl hover:scale-105 ease-in duration-300" :"p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300"}>
                 <div className="grid grid-cols-2 justify-center items-center">
                   <div className="m-auto">
                     <Image
@@ -140,7 +143,7 @@ function Skills() {
               </div>
               </Zoom>
               <Zoom >
-              <div className="p-6  hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className={ajx.darkmode ? "p-6 hover:bg-amber-400 shadow-amber-400 hover:text-black  shadow-sm rounded-xl hover:scale-105 ease-in duration-300" :"p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300"}>
                 <div className="grid grid-cols-2 justify-center items-center">
                   <div className="m-auto">
                     <Image
@@ -157,7 +160,7 @@ function Skills() {
               </div>
               </Zoom>
 <Zoom >
-              <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className={ajx.darkmode ? "p-6 hover:bg-amber-400 shadow-amber-400 hover:text-black  shadow-sm rounded-xl hover:scale-105 ease-in duration-300" :"p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300"}>
                 <div className="grid grid-cols-2 justify-center items-center">
                   <div className="m-auto">
                     <Image
@@ -184,7 +187,7 @@ function Skills() {
        
           <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-8 p-5 md:p-0">
           <Zoom >
-            <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className={ajx.darkmode ? "p-6 hover:bg-amber-400 shadow-amber-400 hover:text-black  shadow-sm rounded-xl hover:scale-105 ease-in duration-300" :"p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300"}>
               <div className="grid grid-cols-2 justify-center items-center">
                 <div className="m-auto">
                   <Image
@@ -201,7 +204,7 @@ function Skills() {
             </div>
         </Zoom>
           <Zoom >
-            <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className={ajx.darkmode ? "p-6 hover:bg-amber-400 shadow-amber-400 hover:text-black  shadow-sm rounded-xl hover:scale-105 ease-in duration-300" :"p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300"}>
               <div className="grid grid-cols-2 justify-center items-center">
                 <div className="m-auto">
                   <Image
@@ -218,7 +221,7 @@ function Skills() {
             </div>
         </Zoom>
           <Zoom >
-            <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className={ajx.darkmode ? "p-6 hover:bg-amber-400 shadow-amber-400 hover:text-black  shadow-sm rounded-xl hover:scale-105 ease-in duration-300" :"p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300"}>
               <div className="grid grid-cols-2 justify-center items-center">
                 <div className="m-auto">
                   <Image
@@ -235,7 +238,7 @@ function Skills() {
             </div>
         </Zoom>
           <Zoom >
-            <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className={ajx.darkmode ? "p-6 hover:bg-amber-400 shadow-amber-400 hover:text-black  shadow-sm rounded-xl hover:scale-105 ease-in duration-300" :"p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300"}>
               <div className="grid grid-cols-2 justify-center items-center">
                 <div className="m-auto">
                   <Image
@@ -253,7 +256,7 @@ function Skills() {
         </Zoom>
 
         <Zoom >
-            <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className={ajx.darkmode ? "p-6 hover:bg-amber-400 shadow-amber-400 hover:text-black  shadow-sm rounded-xl hover:scale-105 ease-in duration-300" :"p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300"}>
               <div className="grid grid-cols-2 justify-center items-center">
                 <div className="m-auto">
                   <Image
@@ -282,7 +285,7 @@ function Skills() {
           <div>
             <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-8 p-5 md:p-0">
             <Zoom >
-              <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className={ajx.darkmode ? "p-6 hover:bg-amber-400 shadow-amber-400 hover:text-black  shadow-sm rounded-xl hover:scale-105 ease-in duration-300" :"p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300"}>
                 <div className="grid grid-cols-2 justify-center items-center">
                   <div className="m-auto">
                     <Image
@@ -299,7 +302,7 @@ function Skills() {
               </div>
               </Zoom>
             <Zoom >
-              <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className={ajx.darkmode ? "p-6 hover:bg-amber-400 shadow-amber-400 hover:text-black  shadow-sm rounded-xl hover:scale-105 ease-in duration-300" :"p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300"}>
                 <div className="grid grid-cols-2 justify-center items-center">
                   <div className="m-auto">
                     <Image
@@ -318,7 +321,7 @@ function Skills() {
 
 
               <Zoom >
-              <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className={ajx.darkmode ? "p-6 hover:bg-amber-400 shadow-amber-400 hover:text-black  shadow-sm rounded-xl hover:scale-105 ease-in duration-300" :"p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300"}>
                 <div className="grid grid-cols-2 justify-center items-center">
                   <div className="m-auto">
                     <Image
@@ -338,7 +341,7 @@ function Skills() {
 
 
               <Zoom >
-              <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className={ajx.darkmode ? "p-6 hover:bg-amber-400 shadow-amber-400 hover:text-black  shadow-sm rounded-xl hover:scale-105 ease-in duration-300" :"p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300"}>
                 <div className="grid grid-cols-2 justify-center items-center">
                   <div className="m-auto">
                     <Image
@@ -356,7 +359,7 @@ function Skills() {
               </Zoom>
 
               <Zoom >
-              <div className="p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className={ajx.darkmode ? "p-6 hover:bg-amber-400 shadow-amber-400 hover:text-black  shadow-sm rounded-xl hover:scale-105 ease-in duration-300" :"p-6 hover:bg-blue-400 hover:text-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300"}>
                 <div className="grid grid-cols-2 justify-center items-center">
                   <div className="m-auto">
                     <Image

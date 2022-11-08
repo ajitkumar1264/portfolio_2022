@@ -1,4 +1,4 @@
-
+import react,{useState} from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import About from '../components/About'
@@ -9,11 +9,16 @@ import Project from '../components/Project'
 import Property from './Property'
 import Skills from '../components/Skills'
 import styles from '../styles/Home.module.css'
+import annex from "../components/Context"
 
 export default function Home() {
+
+
+const [darkmode, setdarkmode] = useState(false)
+
   return (
     
-    <div  >
+    <annex.Provider value={{darkmode,setdarkmode}} >
     
       <Head>
         <title>Create Next App</title>
@@ -32,7 +37,7 @@ export default function Home() {
       
 
       
-    </div>
+    </annex.Provider>
    
   )
 }

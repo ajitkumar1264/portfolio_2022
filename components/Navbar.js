@@ -1,20 +1,32 @@
-import React,{useState,useEffect} from "react";
+import React,{useState,useEffect,useContext} from "react";
 import Image from "next/image";
 import Link from "next/link";
-
 import { AiOutlineClose, AiOutlineMenu,AiOutlineMail } from "react-icons/ai";
 import { FaLinkedin,FaGithub } from "react-icons/fa";
 import { BsPersonLinesFill } from "react-icons/bs";
 import { JackInTheBox, Slide } from "react-awesome-reveal";
+import annex from "./Context";
+
+
+
+
 function Navbar() {
 
+  const ajv=useContext(annex)
+  
 const [nav, setnav] = useState(false)
 const [shadow, setshadow] = useState(false)
+const [yellshadow, setyellshadow] = useState(
+  {}
+)
+
 
 const handlenav=()=>{
    setnav(!nav)
 
 }
+
+
 
 useEffect(() => {
  const handleshadow=()=>{
@@ -31,8 +43,33 @@ useEffect(() => {
 }, [])
 
 
+const modechange=()=>{
+
+  ajv.setdarkmode(true)
+  console.log(ajv.darkmode);
+  document.body.style.backgroundColor = "#1B1B1B";
+  document.body.style.color="#FCA311"
+  document.body.style.scrollBehavior="smooth"
+  setyellshadow({
+    "boxShadow":"0 20px 25px -5px rgb(252 163 17 / 0.1),0 8px 10px -6px rgb(252 163 17 / 0.1)"
+  })
+  
+
+}
+
+const moderechange=()=>{
+  ajv.setdarkmode(false)
+  console.log(ajv.darkmode);
+  document.body.style.backgroundColor = "#ecf0f3";
+  document.body.style.color="#1f2937"
+  setyellshadow({
+    "boxShadow":"0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)"
+  })
+}
+
+
   return (
-    <div className={shadow ? "fixed w-full h-20 shadow-xl z-[100]  backdrop-blur-[80vh]  ":"fixed w-full h-20 z-[100]   "}>
+    <div style={yellshadow}   className={shadow ? "fixed w-full h-20 shadow-xl z-[100]  backdrop-blur-[80vh]  ":"fixed w-full h-20 z-[100]   "}>
       <div className="flex justify-between items-center w-auto h-full px-2 2xl:px-16">
         <Image src="/vercel.svg" width={125} height={50} alt="logo" />
 
@@ -63,29 +100,42 @@ useEffect(() => {
                 project
               </li>
             </Link>
+            <Link href="/" onClick={modechange}>
+              <li className="ml-10 text-small uppercase hover:border-b">
+                Dark
+              </li>
+            </Link>
+
+            <Link href="/" onClick={moderechange}>
+              <li className="ml-10 text-small uppercase hover:border-b">
+                White
+              </li>
+            </Link>
+           
+           
           </ul>
-          <div onClick={handlenav} className="md:hidden mr-5 rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer">
+          <div onClick={handlenav} className= "md:hidden mr-5 rounded-full  shadow-gray-400 p-3 cursor-pointer">
             <AiOutlineMenu/>
           </div>
         </div>
       </div>
 
       <div className={ nav ? "md:hidden fixed bg-black/70 top-0 left-0 h-screen w-full":""}>
-        <div className={nav ? " md:hidden fixed top-0 left-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 easein duration-500":"fixed top-0 left-[-100%] p-10 ease-in duration-500"}>
+        <div className={nav ? " md:hidden fixed top-0 left-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 easein duration-500":"fixed top-0 left-[-100%] p-10 ease-in duration-500"} >
           <div>
             <div className="flex w-full items-center justify-between">
               <Image src="/vercel.svg" alt="ajitkemad" height={50} width={125} />
-              <div onClick={handlenav} className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer   ">
+              <div onClick={handlenav} className="rounded-full shadow-lg text-black shadow-gray-400 p-3 cursor-pointer   ">
                 <AiOutlineClose />
               </div>
             </div>
             <div className="border-b border-[#5651e5] my-4">
-              <p className=" font-bold w-[85%] md:w-[90%] py-4">
+              <p className=" font-bold w-[85%] md:w-[90%] py-4 text-black">
                 Lets build something legendary together{" "}
               </p>
             </div>
           </div>
-          <div className="py-4 flex flex-col">
+          <div className="py-4 flex flex-col" style={{"color":"black"}}>
           <Slide direction="right">
               <ul className="uppercase ">
               <Link href="/" className="" onClick={()=>setnav(!nav)}>
@@ -111,6 +161,18 @@ useEffect(() => {
               <Link href="#contact" onClick={()=>setnav(!nav)}>
                 <li className="py-4 text-sm">Contact us</li>
               </Link>
+
+              <Link href="/" onClick={()=>setnav(!nav)} >
+              <li onClick={modechange} className="py-4 text-sm">
+                dark Mode
+              </li>
+            </Link>
+
+            <Link href="/" onClick={()=>setnav(!nav)}>
+              <li  onClick={moderechange} className=" py-4 text-sm">
+               white Mode
+              </li>
+            </Link>
             </ul>
             </Slide>
 

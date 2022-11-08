@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useContext} from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
@@ -6,8 +6,13 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { BsPersonLinesFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { JackInTheBox } from "react-awesome-reveal";
+import annex from "./Context";
 
 function Contact() {
+
+const ajv=useContext(annex)
+
+
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
@@ -19,7 +24,7 @@ function Contact() {
         </JackInTheBox>
 
         <div className="grid lg:grid-cols-6 mt-10 gap-8 p-5 md:p-0">
-          <div className="col-span-3 lg:col-spna-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
+          <div className={ajv.darkmode ? "col-span-3 lg:col-spna-2 w-full h-full shadow-sm shadow-amber-400 rounded-xl p-4":"col-span-3 lg:col-spna-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4"}>
             <div className="lg:p-4 h-full rounded-xl">
               <div className="flex  w-full h-1/2">
                 <Image
@@ -37,16 +42,16 @@ function Contact() {
                 <p className="uppercase mt-5 md:px-0 px-5">Connect with me</p>
                 <div className="flex items-center justify-between py-4">
                 <>
-                  <div className="rounded-full shadow-lg shadow-gray-400 md:p-6 p-4 cursor-pointer hover:scale-110 ease-in duration-500  ">
+                  <div className={ajv.darkmode ? "rounded-full shadow-sm shadow-amber-400 hover:bg-amber-300 hover:text-black md:p-6 p-4 cursor-pointer hover:scale-110 ease-in duration-500  ":"rounded-full shadow-lg shadow-gray-400 md:p-6 p-4 cursor-pointer hover:scale-110 ease-in duration-500  "}>
                     <FaLinkedin />
                   </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 md:p-6 p-4 cursor-pointer hover:scale-110 ease-in duration-500  ">
+                  <div className={ajv.darkmode ? "rounded-full shadow-sm shadow-amber-400 hover:bg-amber-300 hover:text-black md:p-6 p-4 cursor-pointer hover:scale-110 ease-in duration-500  ":"rounded-full shadow-lg shadow-gray-400 md:p-6 p-4 cursor-pointer hover:scale-110 ease-in duration-500  "}>
                     <FaGithub />
                   </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 md:p-6 p-4 cursor-pointer hover:scale-110 ease-in duration-500  ">
+                  <div className={ajv.darkmode ? "rounded-full shadow-sm shadow-amber-400 hover:bg-amber-300 hover:text-black md:p-6 p-4 cursor-pointer hover:scale-110 ease-in duration-500  ":"rounded-full shadow-lg shadow-gray-400 md:p-6 p-4 cursor-pointer hover:scale-110 ease-in duration-500  "}>
                     <AiOutlineMail />
                   </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 md:p-6 p-4 cursor-pointer hover:scale-110 ease-in duration-500  ">
+                  <div className={ajv.darkmode ? "rounded-full shadow-sm shadow-amber-400 hover:bg-amber-300 hover:text-black md:p-6 p-4 cursor-pointer hover:scale-110 ease-in duration-500  ":"rounded-full shadow-lg shadow-gray-400 md:p-6 p-4 cursor-pointer hover:scale-110 ease-in duration-500  "}>
                     <BsPersonLinesFill />
                   </div>
                   </>
@@ -57,7 +62,7 @@ function Contact() {
             </div>
           </div>
 
-          <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
+          <div className={ajv.darkmode ? "col-span-3 w-full h-auto shadow-sm shadow-amber-400 rounded-xl lg:p-4":"col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4"}>
             <div className="p-4">
               <form action="">
                 <div className="grid  gap-4 w-full py-2">
@@ -67,7 +72,7 @@ function Contact() {
                     </label>
                     <input
                       type="text"
-                      className="border-2 rounded-lg p-3 flex  "
+                      className="border-2 rounded-lg p-3 flex text-black "
                     />
                   </div>
                 </div>
@@ -79,7 +84,7 @@ function Contact() {
                     </label>
                     <input
                       type="email"
-                      className="border-2 rounded-lg p-3 flex  "
+                      className="border-2 rounded-lg p-3 flex text-black "
                     />
                   </div>
 
@@ -89,11 +94,11 @@ function Contact() {
                     </label>
                     <textarea
                       type="text"
-                      className="border-2 rounded-lg p-3 flex  "
+                      className="border-2 rounded-lg p-3 flex text-black  "
                     />
                   </div>
                 </div>
-                <button className="w-full p-4 text-gray-100 mt-4">send Message</button>
+                <button className={ajv.darkmode ? "w-full p-4  mt-4 shadow-none text-black":"w-full p-4 text-gray-100 mt-4"}>send Message</button>
               </form>
             </div>
           </div>

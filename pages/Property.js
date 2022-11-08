@@ -1,9 +1,16 @@
-import React from "react";
+import React,{useContext} from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { RiRadioButtonFill } from "react-icons/ri";
+import annex from "../components/Context";
 
 function Property() {
+
+
+
+const ajx=useContext(annex)
+
+
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative ">

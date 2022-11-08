@@ -2,6 +2,16 @@ import React,{useState,useEffect} from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Projectitem from "./Projectitem";
+import chat from ".././public/project/chat.png"
+import crud from ".././public/project/MERN_CRUD.png"
+import multer from ".././public/project/multer-image.png"
+import gallery from ".././public/project/gallery.png"
+import blog from ".././public/project/blog.png"
+import Weather from ".././public/project/weather.png"
+import qrcode from ".././public/project/qrcode.png"
+import supabase from ".././public/project/supabase.png"
+import next from ".././public/project/next.png"
+import tracker from ".././public/project/annextracker.png"
 import para from ".././public/1p.jpg";
 import para1 from ".././public/2p.png";
 import para2 from ".././public/3p.png";
@@ -69,32 +79,48 @@ setfrontendproject(false);
       ( <div className="grid md:grid-cols-2 gap-8 p-5 md:p-0">
       <Zoom >
         <Projectitem
-        title="Property Finder"
-        propertyImg={para}
+        title="Annex Gallery"
+        propertyImg={gallery}
+        tech="Unplash"
         projectURl="/"
+      />
+      </Zoom>
+      
+
+      <Zoom>
+      <Projectitem
+      title="Annex Qrcodesimulator"
+      propertyImg={qrcode}
+      tech="npm package"
+      projectURl="/"
+      />
+      </Zoom>
+
+      <Zoom>
+      <Projectitem
+      title="Annex Weather"
+      propertyImg={Weather}
+      tech="weather API"
+      projectURl="/"
       />
       </Zoom>
       <Zoom>
       <Projectitem
-        title="Property ajjitkdr"
-        propertyImg={para1}
-        projectURl="/"
+      title="NEXT js basic webapp"
+      propertyImg={next}
+      tech="Next Js"
+      projectURl="/"
       />
       </Zoom>
       <Zoom>
       <Projectitem
-        title="hardik vaghela"
-        propertyImg={para1}
-        projectURl="/"
+      title="Annex Tracker "
+      propertyImg={tracker}
+      tech="REACT JS"
+      projectURl="/"
       />
       </Zoom>
-      <Zoom>
-      <Projectitem
-        title="ajitkdjf vaghela"
-        propertyImg={para1}
-        projectURl="/"
-      />
-      </Zoom>
+      
       </div>
       )
       }  
@@ -104,18 +130,47 @@ setfrontendproject(false);
           <div className="grid md:grid-cols-2 gap-8 p-5 md:p-0">
           <Zoom>
         <Projectitem
-        title="Property Finder"
-        propertyImg={para}
+        title="Annex Chat Web App"
+        propertyImg={chat}
+        tech="Socket.io"
         projectURl="/"
       />
       </Zoom>
       <Zoom>
       <Projectitem
-        title="Property ajjitkdr"
-        propertyImg={para1}
-        projectURl="/"
+      title="CRUD Mongoose"
+      propertyImg={crud}
+      tech="MERN"
+      projectURl="/"
       />
       </Zoom>
+      <Zoom>
+      <Projectitem
+      title="Multer Image"
+      propertyImg={multer}
+      tech="MERN"
+      projectURl="/"
+      />
+      </Zoom>
+
+      <Zoom>
+      <Projectitem
+      title="Annex Blog"
+      propertyImg={blog}
+      tech="Firebase"
+      projectURl="/"
+      />
+      </Zoom>
+
+      <Zoom>
+      <Projectitem
+      title="Full stack with supabase "
+      propertyImg={supabase}
+      tech="supabase"
+      projectURl="/"
+      />
+      </Zoom>
+      
       </div>
           
         )
