@@ -14,11 +14,11 @@ import annex from "../components/Context"
 export default function Home() {
 
 
-const [darkmode, setdarkmode] = useState(false)
+
 
   return (
     
-    <annex.Provider value={{darkmode,setdarkmode}} >
+    <div>
     
       <Head>
         <title>Create Next App</title>
@@ -37,7 +37,7 @@ const [darkmode, setdarkmode] = useState(false)
       
 
       
-    </annex.Provider>
+    </div>
    
   )
 }
