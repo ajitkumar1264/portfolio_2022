@@ -71,7 +71,7 @@ const moderechange=()=>{
   return (
     <div style={yellshadow}   className={shadow ? "fixed w-full h-20 shadow-xl z-[100]  backdrop-blur-[80vh]  ":"fixed w-full h-20 z-[100]   "}>
       <div className="flex justify-between items-center w-auto h-full px-2 2xl:px-16">
-        <Image src="/vercel.svg" width={125} height={50} alt="logo" />
+       <h1 className=" text-4xl ml-5  font-semibold">Annex<span className="text-[#5651e5] text-4xl">4u</span></h1>
 
         <div>
           <ul className="hidden md:flex ">
