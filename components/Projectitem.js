@@ -17,7 +17,7 @@ function Projectitem({title,propertyImg,projectURl,tech}) {
     <div className=' text-center hidden group-hover:block absolute'>
     <h3 className={ajx.darkmode ? "text-2xl text-black tracking-wider text-center":"text-2xl text-white tracking-wider text-center"}>{title}</h3>
     <p className={ajx.darkmode ? "pb-4 pt-2 text-black text-center":"pb-4 pt-2 text-white text-center"}>{tech}</p>
-    <Link href="/Property">
+    <Link href={projectURl}>
     <p className='text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>More Info</p>
     </Link>
     </div>

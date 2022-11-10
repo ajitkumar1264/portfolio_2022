@@ -131,7 +131,7 @@ const moderechange=()=>{
             </div>
             <div className="border-b border-[#5651e5] my-4">
               <p className=" font-bold w-[85%] md:w-[90%] py-4 text-black">
-                Lets build something legendary together{" "}
+                Let&apos;s build something legendary together{" "}
               </p>
             </div>
           </div>

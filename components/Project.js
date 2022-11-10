@@ -54,7 +54,7 @@ setfrontendproject(false);
           <div>
           <JackInTheBox>
             <h2 className="py-4 px-5 md:px-0 md:mt-5 mt-0 md:mb-10 mb-5">
-              What Ive Built
+              What I&apos;ve Built
             </h2>
             </JackInTheBox>
           </div>
@@ -82,7 +82,7 @@ setfrontendproject(false);
         title="Annex Gallery"
         propertyImg={gallery}
         tech="Unplash"
-        projectURl="/"
+        projectURl="/Gallery"
       />
       </Zoom>
       
@@ -92,7 +92,7 @@ setfrontendproject(false);
       title="Annex Qrcodesimulator"
       propertyImg={qrcode}
       tech="npm package"
-      projectURl="/"
+      projectURl="/Qrcode"
       />
       </Zoom>
 
@@ -101,15 +101,7 @@ setfrontendproject(false);
       title="Annex Weather"
       propertyImg={Weather}
       tech="weather API"
-      projectURl="/"
-      />
-      </Zoom>
-      <Zoom>
-      <Projectitem
-      title="NEXT js basic webapp"
-      propertyImg={next}
-      tech="Next Js"
-      projectURl="/"
+      projectURl="/Weather"
       />
       </Zoom>
       <Zoom>
@@ -117,7 +109,7 @@ setfrontendproject(false);
       title="Annex Tracker "
       propertyImg={tracker}
       tech="REACT JS"
-      projectURl="/"
+      projectURl="/Tracker"
       />
       </Zoom>
       
@@ -133,7 +125,7 @@ setfrontendproject(false);
         title="Annex Chat Web App"
         propertyImg={chat}
         tech="Socket.io"
-        projectURl="/"
+        projectURl="/Chat"
       />
       </Zoom>
       <Zoom>
@@ -141,24 +133,17 @@ setfrontendproject(false);
       title="CRUD Mongoose"
       propertyImg={crud}
       tech="MERN"
-      projectURl="/"
+      projectURl="/Crud"
       />
       </Zoom>
-      <Zoom>
-      <Projectitem
-      title="Multer Image"
-      propertyImg={multer}
-      tech="MERN"
-      projectURl="/"
-      />
-      </Zoom>
+      
 
       <Zoom>
       <Projectitem
       title="Annex Blog"
       propertyImg={blog}
       tech="Firebase"
-      projectURl="/"
+      projectURl="/Blog"
       />
       </Zoom>
 
@@ -167,7 +152,7 @@ setfrontendproject(false);
       title="Full stack with supabase "
       propertyImg={supabase}
       tech="supabase"
-      projectURl="/"
+      projectURl="/Supa"
       />
       </Zoom>
       

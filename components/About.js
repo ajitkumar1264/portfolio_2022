@@ -15,7 +15,7 @@ function About() {
             About
           </p>
           <JackInTheBox>
-            <h2 className="py-4 px-4 md:px-0 md:mt-5 mt-0">Who I Am</h2>
+            <h2 className="py-4 px-4 md:px-0 md:mt-5 mt-0">Who I&apos;Am</h2>
           </JackInTheBox>
 
           <p
@@ -61,7 +61,9 @@ function About() {
                   : "px-4 py-2"
               }
             >
-              <Link href="/">Download CV</Link>
+            <a href="/CV.pdf" download>
+            Download CV
+            </a>
             </button>
           </p>
         </div>

@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
-import { BsBack, BsMailbox, BsPersonLinesFill } from "react-icons/bs";
+import { BsBack, BsMailbox, BsPersonLinesFill,BsYoutube } from "react-icons/bs";
 import annex from "./Context";
 
 
@@ -61,18 +61,27 @@ const ajx=useContext(annex)
 
           <div  className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <JackInTheBox delay={500}>
+            <Link href="https://www.linkedin.com/in/ajitkumar-vaghela-092605222/
+            ">
               <div className={ajx.darkmode ? "rounded-full shadow-sm shadow-amber-400 hover:bg-amber-300 hover:text-black md:p-6 p-6 cursor-pointer  hover:scale-110 ease-in duration-500 ":"rounded-full shadow-lg hover:bg-blue-400  shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500"}>
                 <FaLinkedin className="" />
               </div>
+              </Link>
+              <Link href="https://github.com/ajitkumar1264">
               <div className={ajx.darkmode ? "rounded-full shadow-sm shadow-amber-400 hover:bg-amber-300 hover:text-black md:p-6 p-6 cursor-pointer  hover:scale-110 ease-in duration-500 ":"rounded-full shadow-lg hover:bg-blue-400  shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500"}>
                 <FaGithub />
               </div>
+              </Link>
+              <Link href="mailto:vaghelaajit464@gmail.com?subject = Feedback&body = Message">
               <div className={ajx.darkmode ? "rounded-full shadow-sm shadow-amber-400 hover:bg-amber-300 hover:text-black md:p-6 p-6 cursor-pointer  hover:scale-110 ease-in duration-500 ":"rounded-full shadow-lg hover:bg-blue-400  shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500"}>
                 <AiOutlineMail />
               </div>
+              </Link>
+              <Link href="https://www.youtube.com/channel/UC188DJQ9NAFoleJTeUy-N4A">
               <div className={ajx.darkmode ? "rounded-full shadow-sm shadow-amber-400 hover:bg-amber-300 hover:text-black md:p-6 p-6 cursor-pointer  hover:scale-110 ease-in duration-500 ":"rounded-full shadow-lg hover:bg-blue-400  shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500"}>
-                <BsPersonLinesFill />
+                <BsYoutube />
               </div>
+              </Link>
             </JackInTheBox>
           </div>
         </div>

@@ -1,9 +1,10 @@
-import React,{useContext} from "react";
+import React,{useContext,useRef} from "react";
 import Image from "next/image";
 import Link from "next/link";
+import emailjs from '@emailjs/browser'
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { BsPersonLinesFill } from "react-icons/bs";
+import { BsPersonLinesFill ,BsYoutube} from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { JackInTheBox } from "react-awesome-reveal";
 import annex from "./Context";
@@ -11,6 +12,23 @@ import annex from "./Context";
 function Contact() {
 
 const ajv=useContext(annex)
+
+const form=useRef();
+
+
+const sendemail=(e)=>{
+  e.preventDefault();
+ 
+  emailjs.sendForm('service_0s35th8','template_0ojv89p',form.current,'uQBh02mdWYBAlLrRZ')
+  .then((result)=>{
+   console.log(result.txt)
+  },(error)=>{
+   console.log(error.txt);
+  })
+  alert("we recived your Message");
+ 
+ 
+ }
 
 
   return (
@@ -42,18 +60,28 @@ const ajv=useContext(annex)
                 <p className="uppercase mt-5 md:px-0 px-5">Connect with me</p>
                 <div className="flex items-center justify-between py-4">
                 <>
+                <Link href="https://www.linkedin.com/in/ajitkumar-vaghela-092605222/
+                ">
                   <div className={ajv.darkmode ? "rounded-full shadow-sm shadow-amber-400 hover:bg-amber-300 hover:text-black md:p-6 p-4 cursor-pointer hover:scale-110 ease-in duration-500  ":"rounded-full shadow-lg shadow-gray-400 md:p-6 p-4 cursor-pointer hover:scale-110 ease-in duration-500  "}>
                     <FaLinkedin />
                   </div>
-                  <div className={ajv.darkmode ? "rounded-full shadow-sm shadow-amber-400 hover:bg-amber-300 hover:text-black md:p-6 p-4 cursor-pointer hover:scale-110 ease-in duration-500  ":"rounded-full shadow-lg shadow-gray-400 md:p-6 p-4 cursor-pointer hover:scale-110 ease-in duration-500  "}>
+                  </Link>
+                  <Link href="https://github.com/ajitkumar1264
+                  ">     
+                               <div className={ajv.darkmode ? "rounded-full shadow-sm shadow-amber-400 hover:bg-amber-300 hover:text-black md:p-6 p-4 cursor-pointer hover:scale-110 ease-in duration-500  ":"rounded-full shadow-lg shadow-gray-400 md:p-6 p-4 cursor-pointer hover:scale-110 ease-in duration-500  "}>
                     <FaGithub />
                   </div>
+                  </Link>
+<Link href="mailto:vaghelaajit464@gmail.com?subject = Feedback&body = Message">
                   <div className={ajv.darkmode ? "rounded-full shadow-sm shadow-amber-400 hover:bg-amber-300 hover:text-black md:p-6 p-4 cursor-pointer hover:scale-110 ease-in duration-500  ":"rounded-full shadow-lg shadow-gray-400 md:p-6 p-4 cursor-pointer hover:scale-110 ease-in duration-500  "}>
                     <AiOutlineMail />
                   </div>
+                  </Link>
+                  <Link href="https://www.youtube.com/channel/UC188DJQ9NAFoleJTeUy-N4A">
                   <div className={ajv.darkmode ? "rounded-full shadow-sm shadow-amber-400 hover:bg-amber-300 hover:text-black md:p-6 p-4 cursor-pointer hover:scale-110 ease-in duration-500  ":"rounded-full shadow-lg shadow-gray-400 md:p-6 p-4 cursor-pointer hover:scale-110 ease-in duration-500  "}>
-                    <BsPersonLinesFill />
+                    <BsYoutube />
                   </div>
+                  </Link>
                   </>
                 </div>
                 
@@ -64,7 +92,7 @@ const ajv=useContext(annex)
 
           <div className={ajv.darkmode ? "col-span-3 w-full h-auto shadow-sm shadow-amber-400 rounded-xl lg:p-4":"col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4"}>
             <div className="p-4">
-              <form action="">
+              <form action="" ref={form} >
                 <div className="grid  gap-4 w-full py-2">
                   <div className="flex flex-col">
                     <label htmlFor="" className="uppercase text-sm py-2">
@@ -72,6 +100,7 @@ const ajv=useContext(annex)
                     </label>
                     <input
                       type="text"
+                      name="name"
                       className="border-2 rounded-lg p-3 flex text-black "
                     />
                   </div>
@@ -84,6 +113,7 @@ const ajv=useContext(annex)
                     </label>
                     <input
                       type="email"
+                      name="email"
                       className="border-2 rounded-lg p-3 flex text-black "
                     />
                   </div>
@@ -93,12 +123,13 @@ const ajv=useContext(annex)
                       Message
                     </label>
                     <textarea
+                    name='message' 
                       type="text"
                       className="border-2 rounded-lg p-3 flex text-black  "
                     />
                   </div>
                 </div>
-                <button className={ajv.darkmode ? "w-full p-4  mt-4 shadow-none text-black":"w-full p-4 text-gray-100 mt-4"}>send Message</button>
+                <button onClick={sendemail} className={ajv.darkmode ? "w-full p-4  mt-4 shadow-none text-black":"w-full p-4 text-gray-100 mt-4"}>send Message</button>
               </form>
             </div>
           </div>
@@ -106,7 +137,11 @@ const ajv=useContext(annex)
       </div>
 
 
-<p className="text-center mb-15 ">CopyRight @2021 vaghela Ajitkumar</p>
+<p className="text-center mb-15 ">@2022 AJITKUMARBR
+<br/>
+ALL RIGHTS RESERVED
+
+</p>
     </div>
     
   );
