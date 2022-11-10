@@ -2,10 +2,10 @@ import React,{useState,useEffect} from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Projectitem from "./Projectitem";
-import chat from ".././public/project/chat.png"
+import chat from ".././public/project/Chat.png"
 import crud from ".././public/project/MERN_CRUD.png"
 import multer from ".././public/project/multer-image.png"
-import gallery from ".././public/project/gallery.png"
+import gallery from ".././public/project/Gallery.png"
 import blog from ".././public/project/blog.png"
 import Weather from ".././public/project/weather.png"
 import qrcode from ".././public/project/qrcode.png"
