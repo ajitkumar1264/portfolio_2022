@@ -7,7 +7,7 @@ import annex from "../components/Context";
 
 function chat() {
 
-  const ajx=useContext(annex)
+  const Ajx=useContext(annex)
 
   return (
     
@@ -39,31 +39,31 @@ other, Showing Time .in Which Message Sent and Showing tick
 mark means Message Received.
 
         </p>
-        <button className={ajx.darkmode ? "px-8 py-2 mt-4 mr-8 shadow-none":"px-8 py-2 mt-4 mr-8"}>demo</button>
-        <button  className={ajx.darkmode ? "px-8 py-2 mt-4 mr-8 shadow-none":"px-8 py-2 mt-4 mr-8"}>code</button>
+        <button className={Ajx.darkmode ? "px-8 py-2 mt-4 mr-8 shadow-none":"px-8 py-2 mt-4 mr-8"}>demo</button>
+        <button  className={Ajx.darkmode ? "px-8 py-2 mt-4 mr-8 shadow-none":"px-8 py-2 mt-4 mr-8"}>code</button>
       </div>
 
-      <div className={ajx.darkmode ? "col-span-4 md:col-span-1 shadow-sm shadow-amber-400 rounded-xl p-4":"col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4"}>
+      <div className={Ajx.darkmode ? "col-span-4 md:col-span-1 shadow-sm shadow-amber-400 rounded-xl p-4":"col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4"}>
         <div className="p-2">
           <p className="text-center font-bold pb-2">Technologies</p>
           <div className="grid grid-cols-2 md:grid-cols-1">
-            <p className={ajx.darkmode ? "text-white py-2 items-center flex gap-3":"text-gray-600 py-2 items-center flex gap-3"}>
+            <p className={Ajx.darkmode ? "text-white py-2 items-center flex gap-3":"text-gray-600 py-2 items-center flex gap-3"}>
               {" "}
               <RiRadioButtonFill className="pr-1" /> React Js
             </p>
-            <p className={ajx.darkmode ? "text-white py-2 items-center flex gap-3":"text-gray-600 py-2 items-center flex gap-3"}>
+            <p className={Ajx.darkmode ? "text-white py-2 items-center flex gap-3":"text-gray-600 py-2 items-center flex gap-3"}>
               {" "}
               <RiRadioButtonFill className="pr-1" /> Tailwind CSS
             </p>
-            <p className={ajx.darkmode ? "text-white py-2 items-center flex gap-3":"text-gray-600 py-2 items-center flex gap-3"}>
+            <p className={Ajx.darkmode ? "text-white py-2 items-center flex gap-3":"text-gray-600 py-2 items-center flex gap-3"}>
               {" "}
               <RiRadioButtonFill className="pr-1" /> Socket.io
             </p>
-            <p className={ajx.darkmode ? "text-white py-2 items-center flex gap-3":"text-gray-600 py-2 items-center flex gap-3"}>
+            <p className={Ajx.darkmode ? "text-white py-2 items-center flex gap-3":"text-gray-600 py-2 items-center flex gap-3"}>
               {" "}
               <RiRadioButtonFill className="pr-1" /> Node js
             </p>
-            <p className={ajx.darkmode ? "text-white py-2 items-center flex gap-3":"text-gray-600 py-2 items-center flex gap-3"}>
+            <p className={Ajx.darkmode ? "text-white py-2 items-center flex gap-3":"text-gray-600 py-2 items-center flex gap-3"}>
               {" "}
               <RiRadioButtonFill className="pr-1" /> Express js
             </p>
