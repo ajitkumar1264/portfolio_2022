@@ -5,7 +5,7 @@ import Link from "next/link";
 import { RiRadioButtonFill } from "react-icons/ri";
 import annex from "../components/Context";
 
-function gallery() {
+function Gallery() {
 
   const ajx=useContext(annex)
 
@@ -73,4 +73,4 @@ function gallery() {
   )
 }
 
-export default gallery
+export default Gallery

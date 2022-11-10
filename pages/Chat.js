@@ -5,7 +5,7 @@ import Link from "next/link";
 import { RiRadioButtonFill } from "react-icons/ri";
 import annex from "../components/Context";
 
-function chat() {
+function Chat() {
 
   const Ajx=useContext(annex)
 
@@ -79,4 +79,4 @@ mark means Message Received.
   )
 }
 
-export default chat
+export default Chat
