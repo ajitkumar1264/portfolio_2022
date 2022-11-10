@@ -14,7 +14,7 @@ function Weather() {
         <div className=" absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh]  z-1 overflow-hidden  ">
           \
           <Image
-            src="/project/chat.png"
+            src="/project/supabase.png"
             className=" flex absolute z-1 w-full top-0   object-cover blur-sm "
             height={100}
             width={1}
