@@ -4,17 +4,13 @@ import Link from "next/link";
 import Projectitem from "./Projectitem";
 import chat from ".././public/project/Chat.png"
 import crud from ".././public/project/MERN_CRUD.png"
-import multer from ".././public/project/multer-image.png"
 import gallery from ".././public/project/Gallery.png"
 import blog from ".././public/project/blog.png"
 import Weather from ".././public/project/weather.png"
 import qrcode from ".././public/project/qrcode.png"
 import supabase from ".././public/project/supabase.png"
-import next from ".././public/project/next.png"
 import tracker from ".././public/project/annextracker.png"
-import para from ".././public/1p.jpg";
-import para1 from ".././public/2p.png";
-import para2 from ".././public/3p.png";
+
 import { JackInTheBox, Zoom } from "react-awesome-reveal";
 
 function Project() {
