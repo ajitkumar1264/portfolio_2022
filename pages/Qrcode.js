@@ -36,8 +36,8 @@ function Qrcode() {
         <p className="py-4">
        scan any qr-code and generate any qr-code within few seconds.
         </p>
-        <button className={ajx.darkmode ? "px-8 py-2 mt-4 mr-8 shadow-none":"px-8 py-2 mt-4 mr-8"}>demo</button>
-        <button  className={ajx.darkmode ? "px-8 py-2 mt-4 mr-8 shadow-none":"px-8 py-2 mt-4 mr-8"}>code</button>
+      <Link href="https://annex4u.netlify.app/">  <button className={ajx.darkmode ? "px-8 py-2 mt-4 mr-8 shadow-none":"px-8 py-2 mt-4 mr-8"}>demo</button></Link>
+       <Link href="https://github.com/ajitkumar1264/Annex-qr-code-simulator" > <button  className={ajx.darkmode ? "px-8 py-2 mt-4 mr-8 shadow-none":"px-8 py-2 mt-4 mr-8"}>code</button></Link>
       </div>
 
       <div className={ajx.darkmode ? "col-span-4 md:col-span-1 shadow-sm shadow-amber-400 rounded-xl p-4":"col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4"}>

@@ -35,8 +35,8 @@ function Tracker() {
           <p className="py-4">
           get your current latitude and longitude and location information
           </p>
-          <button className={ajx.darkmode ? "px-8 py-2 mt-4 mr-8 shadow-none":"px-8 py-2 mt-4 mr-8"}>demo</button>
-          <button  className={ajx.darkmode ? "px-8 py-2 mt-4 mr-8 shadow-none":"px-8 py-2 mt-4 mr-8"}>code</button>
+        <Link href="https://annex4utracker.netlify.app/">  <button className={ajx.darkmode ? "px-8 py-2 mt-4 mr-8 shadow-none":"px-8 py-2 mt-4 mr-8"}>demo</button></Link>
+         <Link href="https://github.com/ajitkumar1264/Annex-vite-tracker" > <button  className={ajx.darkmode ? "px-8 py-2 mt-4 mr-8 shadow-none":"px-8 py-2 mt-4 mr-8"}>code</button></Link>
         </div>
 
         <div className={ajx.darkmode ? "col-span-4 md:col-span-1 shadow-sm shadow-amber-400 rounded-xl p-4":"col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4"}>
