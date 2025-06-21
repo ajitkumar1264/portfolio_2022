@@ -1,20 +1,17 @@
-import Navbar from '../components/Navbar'
-import react,{useState} from 'react'
-import '../styles/globals.css'
-import annex from "../components/Context"
+import { useState } from "react";
+import annex from "../components/Context";
+import Navbar from "../components/Navbar";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
+  const [darkmode, setdarkmode] = useState(false);
 
-  const [darkmode, setdarkmode] = useState(false)
-
-  return <>
-
-  <annex.Provider value={{darkmode,setdarkmode}}>
-  <Navbar/>
-  <Component {...pageProps}  />
-  </annex.Provider>
-
-  </> 
+  return (
+    <annex.Provider value={{ darkmode, setdarkmode }}>
+      <Navbar />
+      <Component {...pageProps} />
+    </annex.Provider>
+  );
 }
 
-export default MyApp
+export default MyApp;

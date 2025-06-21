@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { RiRadioButtonFill } from "react-icons/ri";
 import annex from "../components/Context";
 
-function Crud() {
+function Imgc() {
   const ajx = useContext(annex);
 
   return (
@@ -20,8 +20,8 @@ function Crud() {
             alt=""
           />
           <div className="absolute md:top-[60%] top-[50%] md:left-40 left-10  max-w-[1240px] w-full text-lime-200">
-            <h2>Student-placement-cell</h2>
-            <h3 className="py-4">React js /Tailwind /Mongo DB</h3>
+            <h2>Image Compressor Chrome extension</h2>
+            <h3 className="py-4">Devloper Tool /HTML / JS</h3>
           </div>
         </div>
       </div>
@@ -31,17 +31,16 @@ function Crud() {
           <p>Projects</p>
           <h2>overview</h2>
           <p className="py-4">
-            Student Placement Cell is a web-based application designed to
-            streamline the campus placement process. It allows students to view
-            available job positions posted by various companies and apply
-            directly through the platform. On the other side, companies can
-            access the list of applicants for each position, view student
-            profiles, and contact suitable candidates for further recruitment
-            processes. This project aims to simplify communication between
-            students and companies, making the placement process more efficient
-            and transparent.
+            ImgCompressor is a simple and efficient Chrome extension that helps
+            you compress images directly from your browser. Whether you're
+            working with PNG, JPEG, or WebP files, this tool quickly reduces
+            image file sizes without compromising quality. Ideal for developers,
+            designers, and content creators, ImgCompressor ensures faster
+            uploads, optimized storage, and improved web performance — all with
+            just a few clicks. No need to leave your browser or install extra
+            software!
           </p>
-          <Link href="https://www.youtube.com/watch?v=ezCMNosk7rI&t=3s">
+          <Link href="https://chromewebstore.google.com/detail/imgcompressor/hbldghbibaiikjojakpmfefdckkghold?hl=en">
             {" "}
             <button
               className={
@@ -51,18 +50,6 @@ function Crud() {
               }
             >
               demo
-            </button>
-          </Link>
-          <Link href="https://github.com/ajitkumar1264/studentplace-backend">
-            {" "}
-            <button
-              className={
-                ajx.darkmode
-                  ? "px-8 py-2 mt-4 mr-8 shadow-none"
-                  : "px-8 py-2 mt-4 mr-8"
-              }
-            >
-              code
             </button>
           </Link>
         </div>
@@ -95,7 +82,7 @@ function Crud() {
                 }
               >
                 {" "}
-                <RiRadioButtonFill className="pr-1" /> Bootstrap 5
+                <RiRadioButtonFill className="pr-1" /> Tailwind CSS
               </p>
               <p
                 className={
@@ -105,27 +92,7 @@ function Crud() {
                 }
               >
                 {" "}
-                <RiRadioButtonFill className="pr-1" /> Mongo DB
-              </p>
-              <p
-                className={
-                  ajx.darkmode
-                    ? "text-white py-2 items-center flex gap-3"
-                    : "text-gray-600 py-2 items-center flex gap-3"
-                }
-              >
-                {" "}
-                <RiRadioButtonFill className="pr-1" /> Node js
-              </p>
-              <p
-                className={
-                  ajx.darkmode
-                    ? "text-white py-2 items-center flex gap-3"
-                    : "text-gray-600 py-2 items-center flex gap-3"
-                }
-              >
-                {" "}
-                <RiRadioButtonFill className="pr-1" /> Express js
+                <RiRadioButtonFill className="pr-1" /> npm
               </p>
             </div>
           </div>
@@ -138,4 +105,4 @@ function Crud() {
   );
 }
 
-export default Crud;
+export default Imgc;

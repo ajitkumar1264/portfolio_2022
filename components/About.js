@@ -1,7 +1,6 @@
-import React, { useContext } from "react";
-import Link from "next/link";
 import Image from "next/image";
-import { Zoom, Roll, JackInTheBox, Flip, Bounce } from "react-awesome-reveal";
+import { useContext } from "react";
+import { JackInTheBox, Zoom } from "react-awesome-reveal";
 import annex from "./Context";
 
 function About() {
@@ -21,24 +20,19 @@ function About() {
           <p
             className={
               ajx.darkmode
-                ? "py-2 text-gray-200 md:px-0 px-4"
-                : "py-2 text-gray-600 md:px-0 px-4"
-            }
-          >
-            {" "}
-            I am backend Developer
-          </p>
-          <p
-            className={
-              ajx.darkmode
                 ? "py-2 text-gray-200  text-justify md:text-justify md:p-0 md:mb-5 mb-0 p-5"
                 : "py-2 text-gray-600  text-justify md:text-justify md:p-0 md:mb-5 mb-0 p-5"
             }
           >
-            My Name is Vaghela Ajitkumar Vishnubhai. Currently, I am studying at
-            Government Engineering College Rajkot.I am a 3rd-year of CE student.
-            and I am passionate about my work. Because I love what I do, I have
-            a steady source of motivation that drives me to do my best.
+            Hello, I’m Ajitkumar Vaghela, a Software Engineer at Gateway Group
+            of Companies. I completed my Bachelor’s degree in Computer
+            Engineering from Government Engineering College, Rajkot in 2024 With
+            a strong foundation in software development, I have a deep interest
+            in system architecture design and enjoy crafting scalable,
+            high-performance solutions. My work is driven by a passion for clean
+            code, efficient systems, and continuous improvement. I thrive in
+            dynamic environments where I can contribute to building reliable and
+            modern software platforms.
           </p>
           <p
             className={
@@ -47,11 +41,11 @@ function About() {
                 : "py-2 text-gray-600  text-justify md:text-justify md:p-0 p-5"
             }
           >
-            The importance of the world wide web is not unknown to anybody,
-            especially during a time when the internet is all that we need to
-            get our day-to-day work done. Web designing is more than just pretty
-            pictures on the internet, there is much more value to it, and it
-            shall be known to many.
+            As a software engineer, I strive to build robust and reliable
+            software that simplifies everyday tasks. I focus on creating
+            scalable, efficient, and user-friendly systems that solve real-world
+            problems. My goal is to develop solutions that empower people and
+            enhance their daily lives through technology.
           </p>
           <p className="py-2 text-gray-600 underline cursor-pointer mt-5 md:px-0 px-5">
             <button
@@ -61,9 +55,9 @@ function About() {
                   : "px-4 py-2"
               }
             >
-            <a href="/CV.pdf" download>
-            Download CV
-            </a>
+              <a href="/ajitkumar_cv_2025.pdf" download>
+                Download CV
+              </a>
             </button>
           </p>
         </div>
