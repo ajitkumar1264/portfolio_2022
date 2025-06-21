@@ -11,7 +11,6 @@ function Imgc() {
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative ">
         <div className=" absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh]  z-1 overflow-hidden  ">
-          \
           <Image
             src="/project/supabase.png"
             className=" flex absolute z-1 w-full top-0   object-cover blur-sm "
@@ -32,7 +31,7 @@ function Imgc() {
           <h2>overview</h2>
           <p className="py-4">
             ImgCompressor is a simple and efficient Chrome extension that helps
-            you compress images directly from your browser. Whether you're
+            you compress images directly from your browser. Whether you&apos;re
             working with PNG, JPEG, or WebP files, this tool quickly reduces
             image file sizes without compromising quality. Ideal for developers,
             designers, and content creators, ImgCompressor ensures faster
